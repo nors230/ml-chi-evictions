@@ -36,7 +36,7 @@ def run(models_to_run):
 	Returns: None, runs the pipeline and outputs results to a csv file 
 	'''
 	#read data
-	og_df = fp.read_data('raw_data/full_data_chicago.csv')
+	og_df = fp.read_data('../output_files/full_data_chicago.csv')
 
 	#temporal validation
 	lst_train_test_dates = fp.temporal_validate(2005, 2016, [3])
